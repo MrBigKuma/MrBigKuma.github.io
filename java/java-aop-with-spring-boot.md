@@ -154,7 +154,7 @@ dependencies {
 ```
 
 ## Reference:
-1. [I want my AOP!, Part 1 | JavaWorld](https://www.javaworld.com/article/2073918/core-java/i-want-my-aop---part-1.html)
+1. [I want my AOP!, Part 1 JavaWorld](https://www.javaworld.com/article/2073918/core-java/i-want-my-aop---part-1.html)
 2. [Implementing AOP With Spring Boot and AspectJ - DZone Java](https://dzone.com/articles/implementing-aop-with-spring-boot-and-aspectj)
 3. [Can DDD be Adequately Implemented Without DI and AOP?](https://www.infoq.com/news/2008/02/ddd-di-aop)
 4. [oop - Aspect Oriented Programming vs. Object-Oriented Programming - Stack Overflow](https://stackoverflow.com/questions/232884/aspect-oriented-programming-vs-object-oriented-programming)
@@ -205,12 +205,6 @@ JavaでAOPが対応するFrameworkはAspectJと言うFrameworkです。AspectJ�
 AOPを使ったらアルゴリズムのコード何にも変わらないです。進捗トラッカーがモックせずにユニットテストが簡単で書けます。
 
 気にすることはテストしたコードは実にproductionで実行するコードではないです（総合テストで時間かかったデバッグしたことがあります）。コンパイル時、AspectJのコンパイラがアルゴリズムのコードに魔法のコードを注入します。
-
-「The worst thing is that one developer may modified the input (e.g. `source`)  in AspectJ’s wrapper code. The poor algorithm developer will take a difficult time try to figure out why his unit test pass but failing in production environment.
-
-The good coding practice will prevent us adding source modification interception like that but when deadline come or a new developer just want to make the work done. It is every tempting to hack the code to make the task done.
-
-Therefore, It’s necessary to write integration test to validate the code after integration.」
 
 ## AspectJとSpring boot
 AOPを使うとせめて二つが必要です：
@@ -318,7 +312,7 @@ dependencies {
 ```
 
 ## Reference:
-1. [I want my AOP!, Part 1 | JavaWorld](https://www.javaworld.com/article/2073918/core-java/i-want-my-aop---part-1.html)
+1. [I want my AOP!, Part 1 JavaWorld](https://www.javaworld.com/article/2073918/core-java/i-want-my-aop---part-1.html)
 2. [Implementing AOP With Spring Boot and AspectJ - DZone Java](https://dzone.com/articles/implementing-aop-with-spring-boot-and-aspectj)
 3. [Can DDD be Adequately Implemented Without DI and AOP?](https://www.infoq.com/news/2008/02/ddd-di-aop)
 4. [oop - Aspect Oriented Programming vs. Object-Oriented Programming - Stack Overflow](https://stackoverflow.com/questions/232884/aspect-oriented-programming-vs-object-oriented-programming)
